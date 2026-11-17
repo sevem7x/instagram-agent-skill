@@ -9,6 +9,16 @@ description: >-
 
 # ig-comment
 
+> **Várias contas.** Este pack atende várias contas de Instagram, cada uma
+> com a própria pasta `~/.claude/instagram/contas/<conta>/` (voice.md,
+> swipe.md, log.md, plan.md). Antes de tudo, decida a `<conta>`: (1) a que o
+> usuário citou no pedido, por apelido ou @; senão (2) o apelido gravado em
+> `~/.claude/instagram/ativa`; senão (3) liste `~/.claude/instagram/contas/` e
+> pergunte qual. Diga em uma linha para qual conta está trabalhando. Nunca
+> misture a voz, o swipe file, o log ou o plano de uma conta com os de outra.
+> Leia o `voice.md` dessa conta antes de escrever qualquer coisa em nome dela.
+> Se ainda não existir conta nenhuma, mande o usuário rodar `/ig-conta`.
+
 Commenting is the highest-leverage twenty minutes on Instagram and the easiest
 to do badly. A comment near the top of a reel with 40,000 views is seen by more
 people than most accounts' own posts, and it is the one place where a stranger
@@ -82,7 +92,7 @@ Post the first. It concedes something and it has a number in it.
 
 For an engagement round, ask for the 5 to 10 posts as pasted text in one
 message, return one comment each in a single block, and keep a running note in
-`~/.claude/instagram/log.md` of who has been commented on this week.
+`~/.claude/instagram/contas/<conta>/log.md` of who has been commented on this week.
 Commenting on the same three accounts every day is visible and it looks like
 exactly what it is.
 

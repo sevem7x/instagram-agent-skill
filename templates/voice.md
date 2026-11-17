@@ -1,7 +1,8 @@
 # voice.md
 
-Copy this to `~/.claude/instagram/voice.md` and fill it in. Every skill in the
-pack reads it. Ten minutes here is the difference between scripts you shoot and
+One per account. `/ig-conta nova <apelido>` copies this to
+`~/.claude/instagram/contas/<apelido>/voice.md`; fill that copy in. Every skill
+in the pack reads the voice of the account it is working on. Ten minutes here is the difference between scripts you shoot and
 scripts you rewrite.
 
 If you would rather not fill it in by hand, send Claude three of your own reels
@@ -17,6 +18,7 @@ the words out loud. A line you would never say is not a draft, it is a retake.
 
 - **Name:**
 - **Handle:**
+- **Language of the posts:** (ex.: português do Brasil / English)
 - **What I do, in one sentence:**
 - **Who I am talking to:** (be specific: "photographers charging under $2,000",
   not "creatives")

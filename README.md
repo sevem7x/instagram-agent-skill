@@ -1,5 +1,19 @@
 # The Instagram agent skill
 
+> **Fork com várias contas.** Este fork adiciona o `/ig-conta`: cada conta de
+> Instagram tem a própria pasta em `~/.claude/instagram/contas/<apelido>/`, com
+> voz, swipe file, log e plano separados, e as outras 13 skills sempre dizem
+> para qual conta estão escrevendo. A conta é a que você citar no pedido
+> ("reel pra @loja2"), senão a ativa.
+>
+> ```
+> /plugin marketplace add sevem7x/instagram-agent-skill
+> /plugin install instagram-agent@instagram-agent-skill
+> ```
+>
+> Depois: `/ig-conta` para cadastrar as contas, uma por vez ou várias de uma
+> vez. Original: [Jakeschincariol/instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill).
+
 Thirteen Claude skills that run an Instagram account. Free, MIT, no signup, no
 API key, nothing to connect.
 
@@ -46,9 +60,10 @@ Project-local instead of global: copy the same folders into your repo's
 of a chat and it runs as a mode. You lose the five Python tools, which is most
 of the point of `/ig-reel` and `/ig-human`, but the rest works.
 
-Then spend ten minutes on `templates/voice.md`. Copy it to
-`~/.claude/instagram/voice.md` and fill it in, or send Claude three of your own
-reels and say "write my voice.md from these". Every skill reads that file. It
+Then run `/ig-conta` once per account and spend ten minutes on each account's
+`~/.claude/instagram/contas/<apelido>/voice.md` (a copy of `templates/voice.md`),
+or send Claude three of that account's reels and say "write the voice.md from
+these". Every skill reads that file. It
 matters more here than on other platforms, because you have to say the words
 out loud.
 

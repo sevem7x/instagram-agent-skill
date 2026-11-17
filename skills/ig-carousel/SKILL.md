@@ -9,6 +9,16 @@ description: >-
 
 # ig-carousel
 
+> **Várias contas.** Este pack atende várias contas de Instagram, cada uma
+> com a própria pasta `~/.claude/instagram/contas/<conta>/` (voice.md,
+> swipe.md, log.md, plan.md). Antes de tudo, decida a `<conta>`: (1) a que o
+> usuário citou no pedido, por apelido ou @; senão (2) o apelido gravado em
+> `~/.claude/instagram/ativa`; senão (3) liste `~/.claude/instagram/contas/` e
+> pergunte qual. Diga em uma linha para qual conta está trabalhando. Nunca
+> misture a voz, o swipe file, o log ou o plano de uma conta com os de outra.
+> Leia o `voice.md` dessa conta antes de escrever qualquer coisa em nome dela.
+> Se ainda não existir conta nenhuma, mande o usuário rodar `/ig-conta`.
+
 Carousels are the highest-dwell format on the grid, because a swipe is an
 interaction and a scroll is not. They also get a second chance: Instagram can
 show a carousel again starting from a later slide to someone who did not engage

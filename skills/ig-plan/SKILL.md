@@ -9,12 +9,22 @@ description: >-
 
 # ig-plan
 
+> **Várias contas.** Este pack atende várias contas de Instagram, cada uma
+> com a própria pasta `~/.claude/instagram/contas/<conta>/` (voice.md,
+> swipe.md, log.md, plan.md). Antes de tudo, decida a `<conta>`: (1) a que o
+> usuário citou no pedido, por apelido ou @; senão (2) o apelido gravado em
+> `~/.claude/instagram/ativa`; senão (3) liste `~/.claude/instagram/contas/` e
+> pergunte qual. Diga em uma linha para qual conta está trabalhando. Nunca
+> misture a voz, o swipe file, o log ou o plano de uma conta com os de outra.
+> Leia o `voice.md` dessa conta antes de escrever qualquer coisa em nome dela.
+> Se ainda não existir conta nenhuma, mande o usuário rodar `/ig-conta`.
+
 The control room. Everything else in this pack executes; this decides what gets
 executed. Run it once a week, on the same day.
 
 ## Input
 
-If `~/.claude/instagram/voice.md`, `swipe.md` and `log.md` exist, read them.
+If `~/.claude/instagram/contas/<conta>/voice.md`, `swipe.md` and `log.md` exist, read them.
 The swipe file is the user's own evidence from `/ig-viral` about which formulas
 are landing in their niche right now, and it outranks anything in this file.
 The log stops the plan repeating a theme from the last fortnight.
@@ -95,6 +105,6 @@ ENGAGE  (5 reach / 3 peers / 2 buyers)
 Say "write Tuesday" and I will draft it.
 ```
 
-Write the plan to `~/.claude/instagram/plan.md` so the other skills can read
+Write the plan to `~/.claude/instagram/contas/<conta>/plan.md` so the other skills can read
 it. Nothing is scheduled or posted anywhere. This is a plan and the user runs
 it.

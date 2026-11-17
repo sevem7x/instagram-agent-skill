@@ -10,6 +10,16 @@ description: >-
 
 # ig-audit
 
+> **Várias contas.** Este pack atende várias contas de Instagram, cada uma
+> com a própria pasta `~/.claude/instagram/contas/<conta>/` (voice.md,
+> swipe.md, log.md, plan.md). Antes de tudo, decida a `<conta>`: (1) a que o
+> usuário citou no pedido, por apelido ou @; senão (2) o apelido gravado em
+> `~/.claude/instagram/ativa`; senão (3) liste `~/.claude/instagram/contas/` e
+> pergunte qual. Diga em uma linha para qual conta está trabalhando. Nunca
+> misture a voz, o swipe file, o log ou o plano de uma conta com os de outra.
+> Leia o `voice.md` dessa conta antes de escrever qualquer coisa em nome dela.
+> Se ainda não existir conta nenhuma, mande o usuário rodar `/ig-conta`.
+
 The only honest source of what works for an account is that account. Every
 rule in every Instagram guide, including the ones in this pack, is a prior.
 The user's own last 30 posts are the evidence.
@@ -24,7 +34,7 @@ Ask for whichever the user has:
   screenshot is worth more than the rest combined.
 - Or just the posts and their view counts, which is enough for a first pass.
 
-Also read `~/.claude/instagram/log.md` if it exists, since it records which
+Also read `~/.claude/instagram/contas/<conta>/log.md` if it exists, since it records which
 hook formula each post used.
 
 ## What to actually measure

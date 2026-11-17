@@ -12,13 +12,23 @@ description: >-
 
 # ig-viral
 
+> **Várias contas.** Este pack atende várias contas de Instagram, cada uma
+> com a própria pasta `~/.claude/instagram/contas/<conta>/` (voice.md,
+> swipe.md, log.md, plan.md). Antes de tudo, decida a `<conta>`: (1) a que o
+> usuário citou no pedido, por apelido ou @; senão (2) o apelido gravado em
+> `~/.claude/instagram/ativa`; senão (3) liste `~/.claude/instagram/contas/` e
+> pergunte qual. Diga em uma linha para qual conta está trabalhando. Nunca
+> misture a voz, o swipe file, o log ou o plano de uma conta com os de outra.
+> Leia o `voice.md` dessa conta antes de escrever qualquer coisa em nome dela.
+> Se ainda não existir conta nenhuma, mande o usuário rodar `/ig-conta`.
+
 The research skill. Everything else in this pack writes; this one goes and
 looks. Run it monthly, not daily. Formulas last a season.
 
 One tool lives in this folder and it runs:
 
 ```bash
-python3 swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
+python3 swipe.py captured.tsv --out ~/.claude/instagram/contas/<conta>/swipe.md
 ```
 
 ## The one idea that makes this worth doing
@@ -112,7 +122,7 @@ account	followers	median	views	hook
 ```
 
 ```bash
-python3 swipe.py captured.tsv --out ~/.claude/instagram/swipe.md
+python3 swipe.py captured.tsv --out ~/.claude/instagram/contas/<conta>/swipe.md
 ```
 
 It computes the outlier multiple, names the hook formula using the same 26
@@ -171,7 +181,7 @@ YOUR VERSION
   ...
 ```
 
-Write the swipe file to `~/.claude/instagram/swipe.md`. `/ig-reel` and
+Write the swipe file to `~/.claude/instagram/contas/<conta>/swipe.md`. `/ig-reel` and
 `/ig-plan` both read it, which is the point: after this runs once, the rest of
 the pack is working from the user's own evidence instead of from defaults.
 
